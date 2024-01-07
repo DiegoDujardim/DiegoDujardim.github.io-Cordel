@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+@font-face{
+    font-family: 'cordelina';
+    src: url(cordelina.otf);
+    font-weight: normal;
+}
+
+@font-face{
+    font-family: 'eldes';
+    src: url(EldesCordel-Demo.otf);
+    font-weight: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --font-cordelina:'cordelina';
+    --font-eldes:'eldes';
+
+    --cor1:#FAE941;
+    --cor2:#FAD23E;
+    --cor3:#FABA3E;
+    --cor4:#FAA23E;
+    --cor5:#FA813E;
+}
+
+header{
+    background-color:#602302;
+    color: aliceblue;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 5px;
+    box-shadow: 2px 5px 5px #36140166;
+}
+header h1{
+    font-family: var(--font-eldes);
+    font-size: 80px;
+    text-shadow: 2px 5px 5px #1508019b;
+}
+header h3{
+    font-family: var(--font-cordelina);
+    font-size: 20px;
+    padding: 5px;
+}
+header a,footer a{
+    color: #FAE941;
+    text-decoration: none;
+    font-weight: bolder;
+}
+a:hover{
+    text-decoration: underline;
+}
+body{
+    background-color: #FAE941;
+}
+section#inicio{
+   background-image: url(sertãozão.jpg);
+   text-align: center;
+   font-size: 1.5em;
+   height: 300px;
+   background-position: left center;
+   background-attachment: fixed;
+}
+section#inicio  p{
+    padding: 100px 150px 150px 150px;
+    font-weight: bold;
+    color: #FAE941;
+    background-color: #9c490941;
+    padding-left: 10px;
+}
+section.normal{
+    background-color: #FAE941;
+    color: #602302;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-size: 1.2em;
+}
+section.imagem{
+    background-color: aliceblue;
+    color: #FAD23E;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-size: 1.2em;
+    background-attachment: fixed;
+
+}
+section.imagem > p{
+    display: inline-block;
+    width: 400px;
+    background-color: #9c490941;
+    padding-left: 10px;
+}
+section#img01{
+    background-image: url(vaqueiro_nordestino.jpg);
+    background-position: right center;
+    background-size: cover;
+}
+section#img02{
+    background-image: url(xandim_vaqueiro.jpg);
+    background-position: right center;
+    background-size: cover;
+}
+footer{
+    background-color: #602302;
+    font-family: var(--font-cordelina);
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
